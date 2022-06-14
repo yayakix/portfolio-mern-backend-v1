@@ -12,8 +12,13 @@ app.get('/', (req,res) => {
 })
 
 app.get("/projects", (req, res) => {
+  res.json(projects);
+});
+
+app.get("/about", (req, res) => {
   res.json(about);
 });
+
 
 const PORT = process.env.PORT || 4000;
 
